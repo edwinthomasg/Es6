@@ -1,9 +1,9 @@
 function display(num)
 {
-    var value;
+    /*var value --- js view (hoisting)*/
     if(num < 5)
     {
-         value = 100;
+         var value = 100;
         console.log(value);
     }
     else{
@@ -11,4 +11,15 @@ function display(num)
     }
 }
 
-display(4);
+display(6);
+
+console.log(a) //a is not defined because hoisting applied for only declarations part and assignment remains in same place
+var a = 10
+
+function show(flag){
+    if(flag){
+        var x = 20;
+    }
+    return x;
+}
+console.log(show(false))
