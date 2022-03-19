@@ -1,8 +1,8 @@
-const square = function(num){ //traditional way
-    return num*num;
-}
+// const square = function(num){ //traditional way
+//     return num*num;
+// }
 
-console.log("square result = "+square(5));
+// console.log("square result = "+square(5));
 
 const square = (num) => num*num; //concised way of coding 
 
