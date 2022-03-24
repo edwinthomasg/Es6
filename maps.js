@@ -8,7 +8,7 @@ map.forEach((val,ky)=>{ /*foreach to iterate map with two paramters */
     console.log(val+":"+ky)
 })
 console.log(map.has("Akash")) /*returns boolean result */
-const entry = map.entries();
+const entry = map.entries(); 
 
 for(const pair of entry){
     console.log(pair)

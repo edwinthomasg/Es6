@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception</title>
+</head>
+<body>
+    <input type="text" id="name" name="" >
+    <input type="button" value="Click" onclick="clk()">
+    <script>
+        function clk(){
+            // try{
+            // name = document.getElementById("nam").value
+            // }
+            // catch(err){
+            // console.log("The error : "+err)
+            // }
+            try{
+                name = document.getElementById("name").value
+                if(name == "")
+                throw "Name can't be empty"
+            }
+            catch(error){
+                console.log("The error : "+error)
+               
+            }
+            finally{
+                console.log("Program terminated successfully")
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
