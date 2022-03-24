@@ -7,12 +7,17 @@
     <title>Local Storage</title>
 </head>
 <body>
+    <input type="text" name="" id="txt" placeholder="Name plz">
     <input type="button" value="Click" onclick="store()">
     <script>
+        let arr = []
         function store(){
-          localStorage.setItem('name','edwin')
-          localStorage.setItem('id',1234)
-          localStorage.setItem('role','developer')
+            arr.push(document.getElementById("txt").value)
+           localStorage.setItem('name',arr)
+        //   localStorage.setItem('id',1234)
+        //   localStorage.setItem('role','developer')
+       
+          console.log(arr)
     }
     </script>
 </body>

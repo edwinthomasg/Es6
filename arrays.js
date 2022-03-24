@@ -37,3 +37,4 @@ console.log(spl2);
 console.log(languages.toString())
 
 console.log(languages.reverse())
+console.log(isNaN('Edwin'))
