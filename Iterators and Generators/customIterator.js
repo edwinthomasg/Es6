@@ -23,4 +23,9 @@ for(const key of Person){
     console.log(key)
 }
 
-
+function next(){
+    return{
+        value:"ed",
+        done:true
+    }
+}
